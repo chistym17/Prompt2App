@@ -45,6 +45,8 @@ export function Prompt() {
       setIsSignedIn(true);
       return
     }
+    console.log(token);
+    console.log(prompt);
     const response = await axios.post(`${BACKEND_URL}/project`, {
       prompt: prompt,
       type: type,

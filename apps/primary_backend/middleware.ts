@@ -1,5 +1,8 @@
 import type { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const JWT_PUBLIC_KEY = process.env.JWT_PUBLIC_KEY || "";
 
