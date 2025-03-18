@@ -43,7 +43,7 @@ export default function RootLayout({
 					/> */}
 					<ThemeProvider
 						attribute="class"
-						defaultTheme="system"
+						defaultTheme="dark"
 						enableSystem
 						disableTransitionOnChange
 					>
@@ -59,5 +59,4 @@ export default function RootLayout({
 	);
 }
 
-// grid px-4 grid-cols-[1fr_min(640px,100%)_1fr] xl:grid-cols-[1fr_minmax(auto,10rem)_min(640px,100%)_minmax(auto,10rem)_1fr] xl:gap-x-9 xl:px-0 [&>*]:col-start-2 xl:[&>*]:col-start-3
 
