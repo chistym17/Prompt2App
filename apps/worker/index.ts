@@ -30,7 +30,7 @@ app.post("/prompt", async (req, res) => {
         data: {
             content: prompt,
             projectId,
-            type: "user",
+            type: "USER",
         },
     });
 
