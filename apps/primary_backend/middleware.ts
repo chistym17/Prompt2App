@@ -8,7 +8,7 @@ const JWT_PUBLIC_KEY = process.env.JWT_PUBLIC_KEY || "";
 
 
 export function authMiddleware(req: Request, res: Response, next: NextFunction) {
-  const authHeader = req.headers.authorization; // Bearer token
+  const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(" ")[1];
 
   if (!token) {
